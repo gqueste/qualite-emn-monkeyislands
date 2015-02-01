@@ -134,8 +134,8 @@ public class TestSingeErratique extends TestCase{
 		
 		assertTrue("deplacement non effectué alors que permis",
 				this.singe.deplacementFait(positionX, positionY));
-		assertEquals("X n a pas changé", this.singe.getX(), positionX);
-		assertEquals("Y n a pas changé", this.singe.getY(), positionY);
+		assertEquals("X n a pas changé", positionX, this.singe.getX());
+		assertEquals("Y n a pas changé", positionY, this.singe.getY());
 	}
 	
 	@Test
@@ -228,8 +228,8 @@ public class TestSingeErratique extends TestCase{
 		EasyMock.replay(pirate);
 		singe.deplacerSinge();
 		
-		assertEquals("X changé", this.singe.getX(), positionX);
-		assertEquals("Y a changé", this.singe.getY(), positionY);
+		assertEquals("X changé", positionX, this.singe.getX());
+		assertEquals("Y a changé", positionY, this.singe.getY());
 	}
 	
 	@Test
@@ -261,8 +261,8 @@ public class TestSingeErratique extends TestCase{
 		EasyMock.replay(pirate);
 		singe.deplacerSinge();
 		
-		assertEquals("X changé", this.singe.getX(), positionX);
-		assertEquals("Y incorrect", this.singe.getY(), positionY - 1);
+		assertEquals("X changé", positionX, this.singe.getX());
+		assertEquals("Y incorrect", positionY - 1, this.singe.getY());
 	}
 	
 	@Test
@@ -294,8 +294,8 @@ public class TestSingeErratique extends TestCase{
 		EasyMock.replay(pirate);
 		singe.deplacerSinge();
 		
-		assertEquals("X changé", this.singe.getX(), positionX);
-		assertEquals("Y incorrect", this.singe.getY(), positionY + 1);
+		assertEquals("X changé", positionX, this.singe.getX());
+		assertEquals("Y incorrect", positionY + 1, this.singe.getY());
 	}
 	
 	@Test
@@ -327,8 +327,8 @@ public class TestSingeErratique extends TestCase{
 		EasyMock.replay(pirate);
 		singe.deplacerSinge();
 		
-		assertEquals("X incorrect", this.singe.getX(), positionX - 1);
-		assertEquals("Y incorrect", this.singe.getY(), positionY);
+		assertEquals("X incorrect", positionX - 1, this.singe.getX());
+		assertEquals("Y incorrect", positionY, this.singe.getY());
 	}
 	
 	@Test
@@ -360,8 +360,8 @@ public class TestSingeErratique extends TestCase{
 		EasyMock.replay(pirate);
 		singe.deplacerSinge();
 		
-		assertEquals("X incorrect", this.singe.getX(), positionX + 1);
-		assertEquals("Y incorrect", this.singe.getY(), positionY);
+		assertEquals("X incorrect", positionX + 1, this.singe.getX());
+		assertEquals("Y incorrect", positionY, this.singe.getY());
 	}
 	
 	@Test
