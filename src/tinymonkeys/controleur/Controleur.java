@@ -95,7 +95,7 @@ public class Controleur
 	 * 
 	 * @return la carte de l'ile.
 	 */
-	private static int[][] exempleCarte()
+	public static int[][] exempleCarte()
 	{
 		final int[][] carte = new int[LARGEUR_GRILLE][HAUTEUR_GRILLE];
 		int i;

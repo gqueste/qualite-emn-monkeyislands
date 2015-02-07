@@ -234,7 +234,7 @@ public class TestSingeErratique extends TestCase{
 	
 	@Test
 	/**
-	 * Tests de l'aléatoire : Seule position possible -> North
+	 * Tests de l'aléatoire : Seule position possible -> South
 	 */
 	public void testDeplacerSinge_South() {
 		int positionX = 10;
@@ -267,7 +267,7 @@ public class TestSingeErratique extends TestCase{
 	
 	@Test
 	/**
-	 * Tests de l'aléatoire : Seule position possible -> South
+	 * Tests de l'aléatoire : Seule position possible -> North
 	 */
 	public void testDeplacerSinge_North() {
 		int positionX = 10;
