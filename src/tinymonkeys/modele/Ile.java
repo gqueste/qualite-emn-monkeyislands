@@ -244,8 +244,7 @@ public class Ile
 	public boolean estPositionSurTerre(int x, int y)
 	{
 		boolean ret = false;
-		if (y > 0 && y < this.getLargeurCarte() - 1 && x > 0 
-				&& x < this.getLongueurCarte() - 1) {
+		if (this.carte[x][y] > 0) {
 			ret = true;
 		}
 		return ret;
